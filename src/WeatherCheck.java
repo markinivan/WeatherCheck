@@ -20,7 +20,6 @@ public class WeatherCheck {
                     lat, lon, limit
             );
 
-            // === 3. Отправляем запрос ===
             HttpClient client = HttpClient.newHttpClient();
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(url))
